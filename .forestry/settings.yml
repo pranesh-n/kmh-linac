@@ -12,16 +12,16 @@ sections:
 - type: heading
   label: Blog Post
 - type: directory
-  path: exampleSite/content/english/blog
+  path: content/blog
   label: Post (en)
-  create: documents
+  create: all
   match: "**/*"
   templates:
   - post
 - type: heading
   label: Author
 - type: directory
-  path: exampleSite/content/english/author
+  path: content/author
   label: Author (en)
   create: documents
   match: "**/*"
@@ -30,22 +30,22 @@ sections:
 - type: heading
   label: Project
 - type: directory
-  path: exampleSite/content/english/project
+  path: content/project
   label: Project (en)
-  create: documents
+  create: all
   match: "**/*"
   templates:
   - project
 - type: heading
   label: Other Pages
 - type: directory
-  path: exampleSite/content/english
+  path: content
   label: Other Pages (en)
-  create: documents
+  create: all
   match: "*"
   exclude: _index.md
 - type: directory
-  path: exampleSite/content/english
+  path: content
   label: All Pages (en)
   create: all
   match: "**/*"
@@ -54,7 +54,7 @@ sections:
 - type: heading
   label: Configuration
 - type: directory
-  path: exampleSite
+  path: ''
   label: Configuration
   create: all
   match: "*.toml"
