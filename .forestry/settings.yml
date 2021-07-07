@@ -7,39 +7,22 @@ sections:
 - type: heading
   label: Homepage
 - type: document
-  path: exampleSite/content/english/_index.md
-  label: Homepage (en)
-- type: document
-  path: exampleSite/content/french/_index.md
-  label: Homepage (fr)
+  path: content/_index.md
+  label: Homepage
 - type: heading
   label: Blog Post
 - type: directory
-  path: exampleSite/content/english/blog
-  label: Post (en)
-  create: documents
-  match: "**/*"
-  templates:
-  - post
-- type: directory
-  path: exampleSite/content/french/blog
-  label: Post (fr)
-  create: documents
+  path: content/blog
+  label: Post
+  create: all
   match: "**/*"
   templates:
   - post
 - type: heading
   label: Author
 - type: directory
-  path: exampleSite/content/english/author
-  label: Author (en)
-  create: documents
-  match: "**/*"
-  templates:
-  - author
-- type: directory
-  path: exampleSite/content/french/author
-  label: Author (fr)
+  path: content/author
+  label: Author
   create: documents
   match: "**/*"
   templates:
@@ -47,63 +30,36 @@ sections:
 - type: heading
   label: Project
 - type: directory
-  path: exampleSite/content/english/project
-  label: Project (en)
-  create: documents
-  match: "**/*"
-  templates:
-  - project
-- type: directory
-  path: exampleSite/content/french/project
-  label: Project (fr)
-  create: documents
+  path: content/project
+  label: Project
+  create: all
   match: "**/*"
   templates:
   - project
 - type: heading
   label: Other Pages
 - type: directory
-  path: exampleSite/content/english
-  label: Other Pages (en)
-  create: documents
+  path: content
+  label: Other Pages
+  create: all
   match: "*"
   exclude: _index.md
 - type: directory
-  path: exampleSite/content/french
-  label: Other Pages (fr)
-  create: documents
-  match: "*"
-  exclude: _index.md
-- type: directory
-  path: exampleSite/content/english
-  label: All Pages (en)
+  path: content
+  label: All Pages
   create: all
   match: "**/*"
   templates:
   - new-page
-- type: directory
-  path: exampleSite/content/french
-  label: All Pages (fr)
-  create: all
-  match: "**/*"
-  templates:
-  - new-page
-- type: heading
-  label: Translations
-- type: directory
-  path: exampleSite/i18n
-  label: i18n
-  create: documents
-  match: "**/*"
 - type: heading
   label: Configuration
 - type: directory
-  path: exampleSite
+  path: ''
   label: Configuration
   create: all
   match: "*.toml"
   new_doc_ext: toml
-upload_dir: exampleSite/static/images
+upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
