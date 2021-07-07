@@ -1,7 +1,7 @@
 ################################# Basic configuration #########################
 # Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-baseURL = "http://examplesite.org"
-title = "Airspace | Creative Agency Hugo Template"
+baseURL = "https://www.drkmh.com/oncology/linac"
+title = "Latest Radiotherapy | Oncology - Dr Kamakshi Memorial Hospital"
 theme = "sam-airspace"
 # Number of posts per page in list view
 paginate = "4"
@@ -53,20 +53,19 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 ################################# Contact page ################################
 [params.contact]
 # Address block
-phone = "0124857985320"
-email = "demo@email.com"
+phone = "+918939900500"
+email = "info@drkmh.com"
 location = """
-**Themefisher**  
-North Main Street  
-Brooklyn, New South Wales  
-Australia
+**Dr Kamalkshi Memorial Hospital**  
+#1, Radial Road, Pallikaranai,
+Chennai – 600 100, Tamil Nadu, India
 """
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
-address_descriptors = false
+address_descriptors = true
 [params.contact.form]
 enable = true
 # Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
-use_netlify = true
+use_netlify = false
 # Form action
 ## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
 ## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
@@ -99,15 +98,12 @@ expire_days = 2
 ################################# counter.dev analytics #######################
 # This is a [privacy-friendly alternative](https://counter.dev/privacy.html) to Google Analytics & Co.
 [params.counter]
-enable = true
+enable = false
 # counter.dev username, see https://counter.dev/setup.html
 username = ""
 
 
 ################################# Social Media ################################
-[[params.social]]
-icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
 
 [[params.social]]
 icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
